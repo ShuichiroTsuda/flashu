@@ -5,7 +5,7 @@ import { BrowserRouter as Router,
 import * as ROUTES from './constants/router';
 import './App.css';
 import Navigation from './components/Navigation';
-import FlashCard from './components/FlashCard';
+import CardPage from './containers/CardPage';
 import Register from './components/Register';
 import Home from './components/Home';
 
@@ -24,7 +24,7 @@ export default class App extends Component {
             <div>
               <Navigation />
               <Route exact path={ROUTES.LANDING} component={Home} />
-              <Route path={ROUTES.FLASHCARDS} component={FlashCard} />
+              <Route path={ROUTES.FLASHCARDS} component={CardPage} />
               <Route path={ROUTES.REGISTER} component={Register} />
             </div>
           </Router>
