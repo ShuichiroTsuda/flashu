@@ -34,7 +34,6 @@ const previousCard = () => ({
 
 const turnOverCard = () => ({
     type: 'TURN_CARD',
-    
 });
 
 

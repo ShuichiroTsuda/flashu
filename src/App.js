@@ -6,7 +6,7 @@ import * as ROUTES from './constants/router';
 import './App.css';
 import Navigation from './components/Navigation';
 import CardPage from './containers/CardPage';
-import Register from './components/Register';
+import AddCardPage from './containers/AddCardPage';
 import Home from './components/Home';
 
 export default class App extends Component {
@@ -25,7 +25,7 @@ export default class App extends Component {
               <Navigation />
               <Route exact path={ROUTES.LANDING} component={Home} />
               <Route path={ROUTES.FLASHCARDS} component={CardPage} />
-              <Route path={ROUTES.REGISTER} component={Register} />
+              <Route path={ROUTES.REGISTER} component={AddCardPage} />
             </div>
           </Router>
       </div>

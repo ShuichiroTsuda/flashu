@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import cardsAction from '../actions/cardsAction';
 import FlashCard from '../components/FlashCard';
 
-class Card extends Component {
+class CardPage extends Component {
     constructor(){
         super();
         this.turnOverCard = this.turnOverCard.bind(this);
@@ -44,15 +44,7 @@ class Card extends Component {
         );
     }
 }
-/*
-const mapStateToProps = (state) => {
-    console.log(state.card.card);
-    return {
-      card: state.card.card
-    };
-};
-*/
 
 const mapStateToProps = (state) => state.card;
 
-export default connect(mapStateToProps)(Card);
+export default connect(mapStateToProps)(CardPage);
