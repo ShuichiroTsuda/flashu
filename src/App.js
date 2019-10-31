@@ -10,13 +10,6 @@ import AddCardPage from './containers/AddCardPage';
 import Home from './components/Home';
 
 export default class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-        loading: true,
-        user: null,
-    }
-  }
   render() {
     return (
       <div>
@@ -25,7 +18,7 @@ export default class App extends Component {
               <Navigation />
               <Route exact path={ROUTES.LANDING} component={Home} />
               <Route path={ROUTES.FLASHCARDS} component={CardPage} />
-              <Route path={ROUTES.REGISTER} component={AddCardPage} />
+              <Route path={ROUTES.ADD_CARD} component={AddCardPage} />
             </div>
           </Router>
       </div>

@@ -10,9 +10,8 @@ const Navigation = () => (
                     <Link to={ROUTES.LANDING}>FLASHU</Link>
                 </h1>
             </div>
-
             <li><Link to={ROUTES.FLASHCARDS}>FlashCard</Link></li>
-            <li><Link to={ROUTES.REGISTER}>Register</Link></li>
+            <li><Link to={ROUTES.ADD_CARD}>Add Card</Link></li>
         </section>
     </div>
 );

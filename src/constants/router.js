@@ -1,3 +1,3 @@
 export const LANDING = '/';
-export const REGISTER = '/resgister';
+export const ADD_CARD = '/addcard';
 export const FLASHCARDS = '/flashcards';
